@@ -3,11 +3,11 @@ import java.util.*;
 
 //Approach 1 
 //If we compare each element of array with the rest of array
+// Time Complexity: O(n^2)
 
 
 // public class Main{
 //     public boolean contdup(int[] arr){   //function to ckeck if array contains duplicate
-//         int ans=0;
 //         for(int i=0; i<arr.length; i++){
 //             int e= arr[i];
 //             for(int j=i+1; j<arr.length; j++){
@@ -30,11 +30,11 @@ import java.util.*;
 
 // Approach 2: 
 // if we sort array and compare adjacent elements
-
+// Time Complexity: O(N log N)
 
 // public class Main{    
 //     public boolean contdup(int[] arr) {
-//         Arrays.sort(arr);
+//         Arrays.sort(arr);            //Arrays.sort() method to sort array
 //         for(int i=0; i<arr.length-1; i++){
 //         if(arr[i]==arr[i+1]){
 //             return true;
@@ -56,7 +56,7 @@ import java.util.*;
 
 // Approach 3:
 // Using hashSet we'll check if element exists twice
-
+// Time Complexity: O(n)
 
     public class Main{
     public boolean contdup(int[] arr) {
